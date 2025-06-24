@@ -34,3 +34,5 @@ $routes->group('cart', ['filter' => 'auth'], function ($routes) {
     $routes->get('delete/(:any)', 'TransactionController::cart_delete/$1');
     $routes->get('clear', 'TransactionController::cart_clear');
 });
+
+$routes->get('checkout', 'TransactionController::checkout', ['filter' => 'auth']);

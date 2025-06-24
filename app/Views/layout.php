@@ -53,15 +53,6 @@ if(uri_string()!=""){
 	<script src="<?= base_url()?>booksaw/js/plugins.js"></script>
 	<script src="<?= base_url()?>booksaw/js/script.js"></script>
 
-	<!-- biar tidak scroll flasdata -->
-	 <!-- <script>
-    window.onload = function () {
-        const section = document.getElementById('popular-books'); // beri id di section produk
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-</script> -->
 
 </body>
 

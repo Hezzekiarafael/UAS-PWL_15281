@@ -2471,6 +2471,17 @@ footer#footer {
     width: 300px;
 }
 
+/* setting button */
+.uniform-btn {
+  height: 42px !important;
+  line-height: 42px !important;
+  padding: 0 1rem !important;
+  font-size: 0.95rem !important;
+  font-weight: normal !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  border-radius: 8px !important;
+}
 
 
 

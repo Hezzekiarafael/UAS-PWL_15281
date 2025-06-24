@@ -51,15 +51,43 @@
             </div><!-- .row -->
         </div><!-- .product-list -->
 
-        <div class="mt-4 alert alert-info bg-light">
-            Total = <?= number_to_currency($total, 'IDR') ?>
-        </div>
+    <div class="alert alert-info">
+        <?php echo "Total = " . number_to_currency($total, 'IDR') ?>
+    </div>
 
-        <div class="btn-wrap align-right mt-3">
-            <button type="submit" class="btn btn-primary" style="border-radius: 8px;">Perbarui Keranjang</button>
-             <button type="submit" class="btn btn-dark" style="border-radius: 8px;"><a href="<?= base_url() ?>cart/clear">Kosongkan Keranjang</a></button>
-        
-        </div>
+          
+    <div class="btn-wrap align-right mt-3 d-flex gap-2">
+       <button class="btn btn-primary uniform-btn">Perbarui Keranjang</button>
+        <a class="btn btn-light uniform-btn" href="<?php echo base_url() ?>cart/clear">Kosongkan Keranjang</a> 
+
+        <!-- Tombol Selesai Belanja / checkout -->
+        <?php if (!empty($items)): ?>
+  <a href="#" class="btn btn-success uniform-btn" data-bs-toggle="modal" data-bs-target="#checkoutModal">
+    Selesai Belanja
+</a>
+
+        <?php endif; ?>
+</div>
+
+            <!-- untuk popup -->
+             <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Checkout</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+      </div>
+      <div class="modal-body">
+        <?= $this->include('checkout') ?> <!-- file ini hanya berisi form, bukan full layout -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
     </div><!-- .container -->
 </section>
 
