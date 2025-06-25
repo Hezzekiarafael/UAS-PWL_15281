@@ -40,8 +40,8 @@
                 <div class="col-12">
                     <h2 class="section-title divider text-center mb-4">Daftar Buku</h2>
                         <div class="table-responsive">
-                            <table class="table table-bordered table-striped datatable w-100">
-                                <thead class="table-dark">
+                            <table class="table table-bordered  text-center align-middle datatable w-100">
+                                <thead class="">
                                     <tr>
                                         <th scope="col">#</th>
                                         <th scope="col">Nama</th>

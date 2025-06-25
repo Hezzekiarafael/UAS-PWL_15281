@@ -1,6 +1,5 @@
- <?= form_open('buy', 'class="row g-3"') ?>
-<?= form_hidden('username', session()->get('username')) ?>
-<?= form_input(['type' => 'hidden', 'name' => 'total_harga', 'id' => 'total_harga', 'value' => '']) ?>
+<input type="hidden" name="username" value="<?= session()->get('username') ?>">
+<input type="hidden" name="total_harga" id="total_harga" value="">
 
 <div class="mb-3">
     <label for="nama" class="form-label">Nama</label>
@@ -14,18 +13,12 @@
 
 <div class="mb-3">
     <label for="kelurahan" class="form-label">Kelurahan</label>
-    <select name="kelurahan" id="kelurahan" class="form-select" required>
-        <option value="">-- Pilih Kelurahan --</option>
-        <!-- <option value="...">...</option> -->
-    </select>
+    <select class="form-control" name="kelurahan" id="kelurahan" required></select>
 </div>
 
 <div class="mb-3">
     <label for="layanan" class="form-label">Layanan</label>
-    <select name="layanan" id="layanan" class="form-select" required>
-        <option value="">-- Pilih Layanan --</option>
-        <!-- <option value="...">...</option> -->
-    </select>
+     <select class="form-control" name="layanan" id="layanan" required></select>
 </div>
 
 <div class="mb-3">
@@ -36,10 +29,6 @@
 <div class="mb-3">
     <label for="total" class="form-label">Total Harga</label>
     <input type="text" class="form-control" id="total_display" readonly value="Rp <?= number_format($total, 0, ',', '.') ?>">
-</div>
-
-<div class="text-center">
-    <button type="submit" class="btn btn-primary">Buat Pesanan</button>
 </div>
  <table class="table table-bordered">
           <thead>
@@ -67,5 +56,3 @@
             <?php endif; ?>
           </tbody>
         </table>
-
-<?= form_close() ?>

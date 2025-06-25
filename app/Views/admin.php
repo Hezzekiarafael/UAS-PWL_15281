@@ -11,7 +11,7 @@
               <h5 class="mb-0 font-medium">Admin</h5>
             </div>
             <ul class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../dashboard/index.html">Dashboard</a></li>
+              <li class="breadcrumb-item"><a href="admin">Dashboard</a></li>
             </ul>
           </div>
         </div>
@@ -20,19 +20,19 @@
         <!-- [ Main Content ] start -->
             <div class="card table-card">
               <div class="card-header">
-                <h5>Recent Admin</h5>
+                <ul>
+					<li>
+						<a href=""><img src="<?= base_url()?>booksaw/images/icon-admin.png" alt="logo" style="width: 280px; position: relative; top:11px;"></a>
+					</li>
+				</ul>
               </div>
 			  <section id="popular-books" class="bookshelf align-center">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="section-header align-center">
-								<h2 class="section-title">Popular Books</h2>
+							<div class="section-header align-center mt-4 mb-4">
+								<h2 class="section-title">Books</h2>
 							</div>
-					<ul class="tabs">
-						<li data-tab-target="#all-genre" class="active tab">All Genre</li>
-					</ul>
-
 					<!-- Coding proses Read Data untuk data product-->
 					<div class="tab-content align-item-center">
 						<div id="all-genre" data-tab-content class="active">

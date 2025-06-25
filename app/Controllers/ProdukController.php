@@ -20,6 +20,7 @@ class ProdukController extends BaseController
         $data['product'] = $product;
 
         return view('product', $data);
+        return view('allProduk', $data);
     }
     public function create()
 {

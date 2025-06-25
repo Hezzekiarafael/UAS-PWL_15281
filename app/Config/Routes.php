@@ -36,3 +36,8 @@ $routes->group('cart', ['filter' => 'auth'], function ($routes) {
 });
 
 $routes->get('checkout', 'TransactionController::checkout', ['filter' => 'auth']);
+$routes->post('buy', 'TransactionController::buy', ['filter' => 'auth']);
+
+// untuk mengakses dua endpoint sesuai yang dicoba menggunakan postman
+$routes->get('get-location', 'TransactionController::getLocation', ['filter' => 'auth']);
+$routes->get('get-cost', 'TransactionController::getCost', ['filter' => 'auth']);

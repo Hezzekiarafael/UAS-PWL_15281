@@ -1,15 +1,37 @@
- <footer class="pc-footer">
-      <div class="footer-wrapper container-fluid mx-10">
-        <div class="grid grid-cols-12 gap-1.5">
-          <div class="col-span-12 sm:col-span-6 my-1">
-            <p class="m-0"></p>
-              <a href="https://codedthemes.com/" class="text-theme-bodycolor dark:text-themedark-bodycolor hover:text-primary-500 dark:hover:text-primary-500" target="_blank">CodedThemes</a>
-              , Built with ♥ for a smoother web presence.
-            </p>
-          </div>
-          <div class="col-span-12 sm:col-span-6 my-1 justify-self-end">
-                   <p class="inline-block max-sm:mr-3 sm:ml-2">Distributed by <a href="https://themewagon.com" target="_blank">Themewagon</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="container">
+		</div>
+	</footer>
+
+	<div id="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="copyright">
+						<div class="row">
+
+							<div class="col-md-6">
+								<p>© 2025 All rights reserved. by <a
+										href="https://www.templatesjungle.com/" target="_blank">Mr. Hezzekia Rafael Miracle</a></p>
+							</div>
+
+							<div class="col-md-6">
+								<div class="social-links align-right">
+									<ul>
+										<li>
+											<a href=""><img src="<?= base_url()?>booksaw/images/logo-baru.png" alt="logo" style="width: 250px;"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div><!--grid-->
+
+				</div><!--footer-bottom-content-->
+			</div>
+		</div>
+	</div>

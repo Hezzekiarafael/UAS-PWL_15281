@@ -14,9 +14,7 @@
 						<div class="slider-item">
 							<div class="banner-content">
 								<h2 class="banner-title">Life of the Wild</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
-									ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
-									urna, a eu.</p>
+								<p>An adventurous glimpse into nature’s raw beauty. Follow the untamed rhythms of wildlife and discover what it truly means to live wild and free.</p>
 								
 							</div><!--banner-content-->
 							<img src="<?= base_url()?>booksaw/images/main-banner1.jpg" alt="banner" class="banner-image">
@@ -25,9 +23,7 @@
 						<div class="slider-item">
 							<div class="banner-content">
 								<h2 class="banner-title">Birds gonna be Happy</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
-									ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
-									urna, a eu.</p>
+								<p>A heartwarming story about a small bird with big dreams. Nilo believes that no matter the storm, every bird deserves to fly free and be happy.</p>
 								
 							</div><!--banner-content-->
 							<img src="<?= base_url()?>booksaw/images/main-banner2.jpg" alt="banner" class="banner-image">
@@ -51,9 +47,9 @@
 				<div class="inner-content">
 					<div class="logo-wrap">
 						<div class="grid">
-							<a href="#"><img src="<?= base_url()?>booksaw/images/client-image1.png" alt="client"></a>
-							<a href="#"><img src="<?= base_url()?>booksaw/images/client-image2.png" alt="client"></a>
 							<a href="#"><img src="<?= base_url()?>booksaw/images/client-image3.png" alt="client"></a>
+							<a href="#"><img src="<?= base_url()?>booksaw/images/client-image2.png" alt="client"></a>
+							<a href="#"><img src="<?= base_url()?>booksaw/images/icon-1.png" alt="client" style="width: 150px;"></a>
 							<a href="#"><img src="<?= base_url()?>booksaw/images/client-image4.png" alt="client"></a>
 							<a href="#"><img src="<?= base_url()?>booksaw/images/client-image5.png" alt="client"></a>
 						</div>
@@ -82,13 +78,11 @@
 								<div class="product-item">
 									<figure class="product-style">
 										<img src="<?= base_url()?>booksaw/images/product-item1.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-											Cart</button>
 									</figure>
 									<figcaption>
 										<h3>Simple way of piece life</h3>
 										<span>Armor Ramsey</span>
-										<div class="item-price">$ 40.00</div>
+										<div class="item-price">Rp 400.000</div>
 									</figcaption>
 								</div>
 							</div>
@@ -97,13 +91,11 @@
 								<div class="product-item">
 									<figure class="product-style">
 										<img src="<?= base_url()?>booksaw/images/product-item2.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-											Cart</button>
 									</figure>
 									<figcaption>
 										<h3>Great travel at desert</h3>
 										<span>Sanchit Howdy</span>
-										<div class="item-price">$ 38.00</div>
+										<div class="item-price">Rp 380.000</div>
 									</figcaption>
 								</div>
 							</div>
@@ -112,13 +104,12 @@
 								<div class="product-item">
 									<figure class="product-style">
 										<img src="<?= base_url()?>booksaw/images/product-item3.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-											Cart</button>
+										
 									</figure>
 									<figcaption>
 										<h3>The lady beauty Scarlett</h3>
 										<span>Arthur Doyle</span>
-										<div class="<?= base_url()?>booksaw/item-price">$ 45.00</div>
+										<div class="<?= base_url()?>booksaw/item-price">Rp 450.000</div>
 									</figcaption>
 								</div>
 							</div>
@@ -127,13 +118,12 @@
 								<div class="product-item">
 									<figure class="product-style">
 										<img src="<?= base_url()?>booksaw/images/product-item4.jpg" alt="Books" class="product-item">
-										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-											Cart</button>
+								
 									</figure>
 									<figcaption>
 										<h3>Once upon a time</h3>
 										<span>Klien Marry</span>
-										<div class="item-price">$ 35.00</div>
+										<div class="item-price">Rp 350.000</div>
 									</figcaption>
 								</div>
 							</div>
@@ -178,15 +168,10 @@
 								<h2 class="section-title divider">Best Selling Book</h2>
 
 								<div class="products-content">
-									<div class="author-name">By Timbur Hood</div>
+									<div class="author-name">By Hezzekia Rafael</div>
 									<h3 class="item-title">Birds gonna be happy</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet,
-										libero ipsum enim pharetra hac.</p>
-									<div class="item-price">$ 45.00</div>
-									<div class="btn-wrap">
-										<a href="#" class="btn-accent-arrow">shop it now <i
-												class="icon icon-ns-arrow-right"></i></a>
-									</div>
+									<p>A heartwarming story about a small bird with big dreams. Nilo believes that no matter the storm, every bird deserves to fly free and be happy.</p>
+									<div class="item-price">Rp 450.000</div>
 								</div>
 
 							</div>

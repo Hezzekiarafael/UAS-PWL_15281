@@ -78,7 +78,7 @@
 									<?php
 									if (session()->get('role') == 'guest') {
 									?>
-										<li class="menu-item"> <a href="<?= base_url('cart') ?>" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0$)</span></a></li>
+										<li class="menu-item"> <a href="<?= base_url('cart') ?>" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart</span></a></li>
 									<?php
 									} ?>
 								</ul>
