@@ -16,6 +16,8 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
+    
+     // KONFIGURASI UNTUK BASE_URL() 
     public string $baseURL = 'http://localhost:8080/';
 
     /**

@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Controllers;
-
+// Untuk menggunakan ProductModel
 use App\Models\ProductModel;
+
 use Dompdf\Dompdf;
 
 class ProdukController extends BaseController
@@ -16,14 +17,16 @@ class ProdukController extends BaseController
 
     public function index()
     {
+        // 	Mengambil semua data dari tabel product
         $product = $this->product->findAll();
+        // lalu ditampung di var array $data, untuk data dari var $product simpan di index produk
         $data['product'] = $product;
 
         return view('product', $data);
-        return view('allProduk', $data);
+        
     }
     public function create()
-{
+    {
     $dataFoto = $this->request->getFile('foto');
 
     $dataForm = [
@@ -43,8 +46,10 @@ class ProdukController extends BaseController
 
     return redirect('produk')->with('success', 'Data Berhasil Ditambah');
     } 
+
+    // Yang bertanggung jawab menangani req edit, menerima values menggunaka var $id
     public function edit($id)
-{
+    {
     $dataProduk = $this->product->find($id);
 
     $dataForm = [

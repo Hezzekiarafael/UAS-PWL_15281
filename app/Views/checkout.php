@@ -10,7 +10,7 @@
     <label for="alamat" class="form-label">Alamat</label>
     <input type="text" class="form-control" id="alamat" name="alamat" required>
 </div>
-
+<!-- menggunaka select2 -->
 <div class="mb-3">
     <label for="kelurahan" class="form-label">Kelurahan</label>
     <select class="form-control" name="kelurahan" id="kelurahan" required></select>

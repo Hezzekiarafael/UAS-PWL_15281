@@ -1,10 +1,43 @@
-<!-- menentukan halaman apa yang sedang diakses oleh user. -->
+<!-- menentukan halaman apa yang sedang diakses oleh user menggunakn fungsi uri_string() -->
 <?php
 $hlm = "Home";
 if(uri_string()!=""){
   $hlm = ucwords(uri_string());
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- menggunakan variable $hlm berefek di judul tab di browser.-->
+	<title>Miracle Pages <?php echo $hlm ?></title>
+
+	
+    <!-- [Favicon] icon -->
+    <link rel="icon" href="<?= base_url()?>booksaw/images/favicon.ico" type="image/x-icon" />
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css"href="<?= base_url()?>booksaw/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url()?>booksaw/icomoon/icomoon.css">
+	<link rel="stylesheet" type="text/css"href="<?= base_url()?>booksaw/css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url()?>booksaw/style.css">
+
+	<!-- Select2 -->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+</head>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,48 +72,6 @@ if(uri_string()!=""){
 
 </head>
 
-<!-- menentukan halaman apa yang sedang diakses oleh user. -->
-<?php
-$hlm = "Home";
-if(uri_string()!=""){
-  $hlm = ucwords(uri_string());
-}
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <!-- digunakan disini -->
-	<title>Miracle Pages <?php echo $hlm ?></title>
-
-	
-    <!-- [Favicon] icon -->
-    <link rel="icon" href="<?= base_url()?>booksaw/images/favicon.ico" type="image/x-icon" />
-
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="format-detection" content="telephone=no">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="author" content="">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-	<link rel="stylesheet" type="text/css"href="<?= base_url()?>booksaw/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="<?= base_url()?>booksaw/icomoon/icomoon.css">
-	<link rel="stylesheet" type="text/css"href="<?= base_url()?>booksaw/css/vendor.css">
-	<link rel="stylesheet" type="text/css" href="<?= base_url()?>booksaw/style.css">
-
-	<!-- Select2 -->
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-
-</head>
-
-<!-- ...HTML HEAD... -->
 
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
 

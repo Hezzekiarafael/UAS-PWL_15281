@@ -135,6 +135,7 @@
 				</div><!--inner-content-->
 			</div>
 
+<!-- Tombol mengarah ke page All Produk -->
 			<div class="row">
 				<div class="col-md-12">
 
@@ -218,20 +219,22 @@
 						<?php
 						}
 						?>
+
 					<!-- Coding proses Read Data untuk data product-->
 					 <div class="row">
 					<?php foreach ($product as $key => $item): ?>
 					<div class="col-md-3">
 						<div class="product-item">
+							<!-- Saat tombol “Add to Cart” ditekan, data form ini dikirim ke controller/route cart via POST -->
 							<form action="<?= base_url('cart') ?>" method="post">
-								<?= csrf_field(); ?>
 								<!-- Gambar Produk -->
 								<figure class="product-style">
+									<!--  Menampilkan gambar produk berdasarkan nama file yang disimpan di field foto. -->
 									<img src="<?= base_url('img/' . $item['foto']) ?>" alt="<?= esc($item['nama']) ?>" class="product-item">
 									<button type="submit" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
 								</figure>
 
-								<!-- Data Hidden yang Dikirim ke Keranjang -->
+								<!-- Data Hidden yang Dikirim ke Cart -->
 								<input type="hidden" name="id" value="<?= $item['id'] ?>">
 								<input type="hidden" name="foto" value="<?= $item['foto'] ?>">
 								<input type="hidden" name="nama" value="<?= $item['nama'] ?>">
@@ -239,7 +242,8 @@
 								<input type="hidden" name="jumlah" value="1">
 
 								<figcaption>
-									<h3><?= esc($item['nama']) ?></h3>
+									<h3><?= ($item['nama']) ?></h3>
+									<!-- mengubah angka jadi format uang (Rp) -->
 									<div class="item-price"><?= number_to_currency($item['harga'], 'IDR', 'id_ID') ?></div>
 								</figcaption>
 							</form>

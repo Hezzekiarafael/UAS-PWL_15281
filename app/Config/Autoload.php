@@ -89,5 +89,10 @@ class Autoload extends AutoloadConfig
      *
      * @var list<string>
      */
-    public $helpers = [];
+
+    //  Helper url diaktifkan karena akan menggunakan fungsi uri_string(), yang akan mencetak url
+    // setelah base_url
+    public $helpers = [
+        'url'
+    ];
 }

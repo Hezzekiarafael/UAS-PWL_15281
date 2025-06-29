@@ -15,8 +15,9 @@
                             <!-- Jika sudah login -->
                             <div class="d-inline-block">
                                 <span class="me-2 text-dark fw-bold">
+
                                     <!-- menampilkan variable session yang isinya username dan role -->
-                                    <?= esc(session()->get('username')); ?> (<?= esc(session()->get('role')); ?>)
+                                    <?= esc(session()->get('username')); ?> (<i><?= esc(session()->get('role')); ?></i>)
                                 </span>
                                 <a href="<?= base_url('logout') ?>" class="btn-danger btn-sm for-buy">
                                     <i class="icon icon-exit"></i> Logout
@@ -74,6 +75,8 @@
 									<li class="menu-item active"><a href="/">Home</a></li>
 									<li class="menu-item"><a href="#featured-books" class="nav-link">Featured</a></li>
 									<li class="menu-item"><a href="#popular-books" class="nav-link">Popular</a></li>	
+									
+									
 									<!-- Jika User blum login chart tidak muncul -->
 									<?php
 									if (session()->get('role') == 'guest') {

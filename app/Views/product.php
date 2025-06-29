@@ -30,6 +30,7 @@
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
                 Tambah Data
             </button>
+            <!-- TOMBOL Download -->
            <a type="button" class="btn btn-primary" href="<?= base_url('produk/download') ?>">
              Download Data
             </a>
@@ -52,6 +53,7 @@
                                         </tr>
                                 </thead>
                                 <tbody>
+                                <!-- Melakukan perulangan untuk setiap item produk yang ada di array $product -->
                                 <?php foreach ($product as $index => $produk) : ?>
                                             <tr>
                                                 <th scope="row"><?= $index + 1 ?></th>
@@ -59,6 +61,7 @@
                                                 <td><?= $produk['harga'] ?></td>
                                                 <td><?= $produk['jumlah'] ?></td>
                                                 <td>
+                                                    <!-- cek apakah ada file foto produk ada di folder img/ -->
                                                     <?php if (!empty($produk['foto']) && file_exists("img/" . $produk['foto'])) : ?>
                                                         <img src="<?= base_url("img/" . $produk['foto']) ?>" width="100px">
                                                     <?php endif; ?>
@@ -67,12 +70,14 @@
                                                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#editModal-<?= $produk['id'] ?>">
                                                         Ubah
                                                     </button>
+                                                    <!-- Link Hapus untuk menghapus produk -->
                                                     <a href="<?= base_url('produk/delete/' . $produk['id']) ?>" class="btn btn-danger" onclick="return confirm('Yakin hapus data ini ?')">
                                                         Hapus
                                                     </a>
                                                 </td>
                                             </tr>
-                                            <!-- Edit Modal Begin -->
+
+                                            <!-- ISI DARI TOMBOL UBAH  -->
                                             <div class="modal fade" id="editModal-<?= $produk['id'] ?>" tabindex="-1">
                                                 <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
@@ -80,8 +85,9 @@
                                                             <h5 class="modal-title">Edit Data</h5>
                                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
+                                                        <!-- form dikirim ke function produk/edit -->
                                                         <form action="<?= base_url('produk/edit/' . $produk['id']) ?>" method="post" enctype="multipart/form-data">
-                                                            <?= csrf_field(); ?>
+                                                            
                                                             <div class="modal-body">
                                                                 <div class="form-group">
                                                                     <label for="name">Nama</label>
@@ -124,7 +130,9 @@
                         </div>
                     </div>
                     <!-- table data -->
-            <!-- Add Modal Begin -->
+
+
+            <!-- TOMBOL TAMBAH -->
             <div class="modal fade" id="addModal" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -132,8 +140,9 @@
                             <h5 class="modal-title">Tambah Data</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
+                        <!-- MENGIRIM KE CONTROLLER PRODUK -->
                         <form action="<?= base_url('produk') ?>" method="post" enctype="multipart/form-data">
-                            <?= csrf_field(); ?>
+        
                             <div class="modal-body">
                                 <div class="form-group">
                                     <label for="name">Nama</label>

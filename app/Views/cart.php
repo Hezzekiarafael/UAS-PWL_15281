@@ -25,11 +25,13 @@
                         <div class="col-md-3">
                             <div class="product-item">
                                 <figure class="product-style">
+                                  <!--  Menampilkan gambar produk dari file di folder img/, foto diambil dari $item['options']['foto'] -->
                                     <img src="<?= base_url('img/' . $item['options']['foto']) ?>"
                                          alt="<?= $item['name'] ?>"
                                          class="product-item">
                                 </figure>
                                 <figcaption>
+                                  <!-- Menampilkan nama produk & Jumlah -->
                                     <h3><?= $item['name'] ?></h3>
                                     <span>Jumlah:
                                         <input type="number" min="1"
@@ -40,6 +42,7 @@
                                     <div class="item-price">Harga: <?= number_to_currency($item['price'], 'IDR') ?></div>
                                     <div class="item-price">Subtotal: <?= number_to_currency($item['subtotal'], 'IDR') ?></div>
                                     <div class="mt-2">
+                                      <!-- TOMBOL HAPUS -->
                                         <a href="<?= base_url('cart/delete/' . $item['rowid']) ?>"
                                            class="btn btn-light">Hapus</a>
                                     </div>
@@ -48,8 +51,9 @@
                         </div>
                 <?php endforeach;
                 endif; ?>
-            </div><!-- .row -->
-        </div><!-- .product-list -->
+            </div>
+        </div>
+    
 
     <div class="alert alert-info">
         <?php echo "Total = " . number_to_currency($total, 'IDR') ?>
@@ -96,9 +100,7 @@
     </div>
   </div>
 </div>
-
-
-</div><!-- .container -->
+</div>
 </section>
 
 <?php echo form_close() ?>

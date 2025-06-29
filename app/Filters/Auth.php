@@ -8,6 +8,7 @@ use CodeIgniter\Filters\FilterInterface;
 
 class Auth implements FilterInterface
 {
+    // UNTUK route > filter (before) > controller > filter (after)
     public function before(RequestInterface $request, $arguments = null)
     {
         // Do something here

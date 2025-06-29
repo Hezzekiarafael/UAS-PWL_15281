@@ -1,6 +1,6 @@
 <?= $this->extend('layout_clear') ?>
 <?= $this->section('content') ?>
-<!-- pembuatan form login. -->
+<!-- pembuatan form login menggunakan array asosiatif di PHP -->
 <?php
 $username = [
     'name' => 'username',
@@ -20,11 +20,12 @@ $password = [
           <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
-              <div class="d-flex justify-content-center py-4">
-                <a href="index.html" class="logo d-flex align-items-center w-auto">
-                  <img src="assets/img/logo.png" alt="">
-                  <span class="d-none d-lg-block">Book</span>
-                </a>
+              <div class="">
+              <ul>
+										<li>
+											<a href=""><img src="<?= base_url()?>booksaw/images/logo-baru.png" alt="logo" style="width: 250px;"></a>
+										</li>
+									</ul>
               </div><!-- End Logo -->
               <div class="card mb-3">
                 <div class="card-body">
@@ -47,13 +48,15 @@ $password = [
                     }
                     ?>
 
-
+                <!-- form login -->
                   <?= form_open('login', 'class = "row g-3 needs-validation"') ?>
                     <div class="col-12">
                         <label for="yourUsername" class="form-label">Username</label>
                         <div class="input-group has-validation">
                            <span class="input-group-text px-3 py-2" id="inputGroupPrepend" style="font-size: 14px; height: 38px; line-height: 1.5;">@</span>
-                            <?= form_input($username) ?>
+                            
+                           <!--form input membuat inputan form dgn tipe text isiny dari array asosiatif di paling atas    -->
+                           <?= form_input($username) ?>
                             <div class="invalid-feedback">Please enter your username.</div>
                         </div>
                     </div>

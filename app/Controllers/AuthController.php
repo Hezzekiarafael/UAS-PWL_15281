@@ -21,8 +21,9 @@ class AuthController extends BaseController
         $this->user = new UserModel();
     }
 
+    // FUNCTION LOGIN EKSEKUSI HASIL DARI FORM_OPEN = LOGIN DI PAGE LOGIN
     public function login()
-{
+    {
     if ($this->request->getPost()) {
         $rules = [
             'username' => 'required|min_length[6]',
@@ -50,6 +51,8 @@ class AuthController extends BaseController
                         return redirect()->to(base_url('/'));
                     }
                 } else {
+
+                    // YANG MENAMPILKAN ALERT DI LOGIN APABILA SALAH 
                     session()->setFlashdata('failed', 'Kombinasi Username & Password Salah');
                     return redirect()->back();
                 }

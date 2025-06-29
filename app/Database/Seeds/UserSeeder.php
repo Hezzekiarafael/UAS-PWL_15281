@@ -6,8 +6,10 @@ use CodeIgniter\Database\Seeder;
 
 class UserSeeder extends Seeder
 {
+    // akan mengisi 10 data user dummy
     public function run()
     {
+        // library Faker (library bawaan codeigniter4). 
         $faker = \Faker\Factory::create('id_ID');
 
         for ($i = 0; $i < 10; $i++) {
