@@ -4,6 +4,8 @@ namespace App\Database\Seeds;
 
 use CodeIgniter\Database\Seeder;
 
+// Mengisi data awal (dummy/real) ke dalam tabel
+
 class ProductSeeder extends Seeder
 {
     public function run()

@@ -42,7 +42,7 @@
 								<div class="product-item">
 									<figure class="product-style">
 									<img src="<?= base_url('img/' . $item['foto']) ?>" alt="<?= esc($item['nama']) ?>" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+				
 									</figure>
 									<figcaption>
 									<h3><?= esc($item['nama']) ?></h3>

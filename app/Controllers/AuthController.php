@@ -48,7 +48,7 @@ class AuthController extends BaseController
                     if ($dataUser['role'] == 'admin') {
                         return redirect()->to(base_url('admin'));
                     } else {
-                        return redirect()->to(base_url('/'));
+                        return redirect()->to(base_url('/'));// '/' mengarah ke -> home
                     }
                 } else {
 

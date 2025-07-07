@@ -1,4 +1,3 @@
-
 	<div id="header-wrap">
 
 		<div class="top-content">

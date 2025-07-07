@@ -31,8 +31,9 @@
 					<?php foreach ($product as $key => $item): ?>
 					<div class="col-md-3">
 						<div class="product-item">
+							<!-- Form kirim ke Keranjang -->
 							<form action="<?= base_url('cart') ?>" method="post">
-								<?= csrf_field(); ?>
+							
 								<!-- Gambar Produk -->
 								<figure class="product-style">
 									<img src="<?= base_url('img/' . $item['foto']) ?>" alt="<?= esc($item['nama']) ?>" class="product-item">

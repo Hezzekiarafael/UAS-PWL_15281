@@ -4,6 +4,8 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
+// Migration untuk Membuat struktur tabel (schema) di database
+
 class Product extends Migration
 {
     public function up()

@@ -18,11 +18,12 @@ class TransactionController extends BaseController
     {
         helper('number');
         helper('form');
+        // Fungsinya untuk menyimpan, menambahkan, dan menghapus isi keranjang belanja (shopping cart).
         $this->cart = \Config\Services::cart();
         // variable baru untuk menyimpan object baru dari client guzzle dan nilai API Key yang tersimpan pada file .env.
         $this->client = new \GuzzleHttp\Client();
         $this->apiKey = env('COST_KEY');
-
+        // Menyimpan data transaksi ke tabel transaction
         $this->transaction = new TransactionModel();
         $this->transaction_detail = new TransactionDetailModel();
 
